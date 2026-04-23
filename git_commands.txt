@@ -1,0 +1,120 @@
+
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/phoudsavanh/OnlineMarket-Flet-Frontend-FastAPI-Backend.git
+git push -u origin main
+
+
+
+git pull       # get latest code
+# do your work
+git add .
+git commit -m "your message"
+git push
+
+
+
+
+# =========================
+# GIT COMPLETE COMMAND LIST
+# =========================
+
+# --- CONFIGURATION ---
+git config --global user.name Your Name
+git config --global user.email your@email.com
+git config --list
+
+# --- INITIALIZE  CLONE ---
+git init
+git clone repo_url
+
+# --- CHECK STATUS ---
+git status
+
+# --- ADD FILES ---
+git add .                 # add all files
+git add file            # add specific file
+
+# --- COMMIT ---
+git commit -m message
+
+# --- BRANCHING ---
+git branch                # list branches
+git branch name         # create branch
+git checkout branch     # switch branch
+git checkout -b name    # create + switch
+git branch -d name      # delete branch
+
+# --- MERGE ---
+git merge branch
+
+# --- REMOTE ---
+git remote add origin repo_url
+git remote -v
+
+# --- PUSH (UPLOAD) ---
+git push
+git push origin main
+git push -u origin main
+
+# --- PULL (DOWNLOAD + MERGE) ---
+git pull
+git pull origin main
+git pull --rebase
+
+# --- FETCH ---
+git fetch
+
+# --- LOG  HISTORY ---
+git log
+git log --oneline
+git log --graph
+
+# --- DIFF ---
+git diff
+git diff file
+
+# --- RESET  UNDO ---
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+
+# --- STASH ---
+git stash
+git stash pop
+git stash list
+
+# --- REMOVE FILE ---
+git rm file
+
+# --- RENAME FILE ---
+git mv old_name new_name
+
+# --- TAGS ---
+git tag
+git tag v1.0
+git push origin v1.0
+
+# --- CLEAN ---
+git clean -f
+
+# --- FORCE PUSH (DANGEROUS) ---
+git push --force
+
+# --- SHOW FILE HISTORY ---
+git blame file
+
+# --- CHECK REMOTE BRANCHES ---
+git branch -r
+
+# --- DELETE REMOTE BRANCH ---
+git push origin --delete branch
+
+# =========================
+# QUICK DAILY WORKFLOW
+# =========================
+git pull --rebase
+git add .
+git commit -m update
+git push
